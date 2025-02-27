@@ -52,8 +52,11 @@ As of Feb 26,2025, the standard install scripts will fail, due to the ARMv5TE ar
 *
 
 ### Assets
-* rootfs for Debian Armel - Testing/Trixie (02/26/2025)
-* 
+* minimal rootfs for Debian Armel - Testing/Trixie (02/26/2025) - https://davescloud2.homeip.net/index.php/s/8V10pfIqj81jlaP
+   * this is a public link to my ownCloud instance - my certificate is self-signed
+   * login is root:root (insecure, change immediately)
+   * installation is the same as on the Doozan site
+   * kernel installed is armel/Kirkwood and not OXNAS
 
 
 ### Adjustment/tweaks for memory usage
