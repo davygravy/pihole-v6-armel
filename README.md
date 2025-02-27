@@ -27,20 +27,20 @@ As of Feb 26,2025, the standard install scripts will fail, due to the ARMv5TE ar
 
 ### Dependencies
 * a working, updated Stable/Bookworm or Testing/Trixie Debian install on a Kirkwood/armel box (PogoPlug, Goflex, etc.).
-* a rootfs/tarball for Trixie is available here - use at your own risk 
+* a rootfs/tarball for Trixie Armel is available below in **Assets** below  - use at your own risk 
 * normal dependencies called for by pihole/Pi-hole (note that in v6, php and lighttpd are no longer required)
 * 
 
 ### OS Check Flag
 * the install script makes use of quite a few checks, among them, **OS** and **Architecture**.
   * we can't get around the **Architecture** check
-  * As of Feb 26, 2025, the **OS** check can be bypasses using the ENV flag : `PIHOLE_SKIP_OS_CHECK=true`
+  * As of Feb 26, 2025, the **OS** check can be bypassed using the ENV flag : `PIHOLE_SKIP_OS_CHECK=true`
   * prepend this flag to a sequence commands on a line and it will skip that check for those commands
     
 
 
 ### Installing
-*  `PIHOLE_SKIP_OS_CHECK=true`
+*  Note and prepend the flag `PIHOLE_SKIP_OS_CHECK=true` as shown below; remember that it will only work w/ scripts that are aware of that flag
 *  
 
 ### Upgrading from v5
@@ -52,11 +52,12 @@ As of Feb 26,2025, the standard install scripts will fail, due to the ARMv5TE ar
 *
 
 ### Assets
-* minimal rootfs for Debian Armel - Testing/Trixie (02/26/2025) - https://davescloud2.homeip.net/index.php/s/8V10pfIqj81jlaP
-   * this is a public link to my ownCloud instance - my certificate is self-signed
-   * login is root:root (insecure, change immediately)
+* minimal rootfs for Debian Armel - Testing/Trixie (02/26/2025) - [armel-trixie-2025-02-26_21-10-48.tar.bz2](https://davescloud2.homeip.net/index.php/s/8V10pfIqj81jlaP)
+   * this is a public link to my ownCloud instance - my certificate is self-signed - be aware
+   * ssh (user:password) login is (root:root) - note that this is not secure and should be changed immediately
    * installation is the same as on the Doozan site
    * kernel installed is armel/Kirkwood and not OXNAS
+* 
 
 
 ### Adjustment/tweaks for memory usage
@@ -65,9 +66,6 @@ As of Feb 26,2025, the standard install scripts will fail, due to the ARMv5TE ar
   * more coming...
 
 ### Version History - not yet...
-* 0.2
-    * Various bug fixes and optimizations
-    * See [commit change]() or See [release history]()
 
 
 ## License
